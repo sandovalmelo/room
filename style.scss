@@ -1,0 +1,43 @@
+@import "./scss/base";
+@import "./scss/menu";
+@import "./scss/header";
+@import "./scss/about";
+
+@media screen and (min-width: $medium-screen) {
+	body {
+		display: grid;
+		grid-template-rows: 70dvh 30dvh;
+	}
+
+	.hero {
+		grid-row: 1 / 2;
+		display: grid;
+		grid-template-columns: 60dvw 40dvw;
+	}
+
+	.swiper {
+		grid-column: 1 / 2;
+	}
+
+	.header {
+		grid-column: 2 / 3;
+	}
+
+	.info {
+		grid-row: 2 / 3;
+		display: grid;
+		grid-template-columns: 30dvw 40dvw 30dvw;
+	}
+
+	.about-img-1 {
+		grid-column: 1 / 2;
+	}
+
+	.about {
+		grid-column: 2 / 3;
+	}
+
+	.about-img-2 {
+		grid-column: 3 / 4;
+	}
+}

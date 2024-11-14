@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+$grey: hsl(0, 0%, 63%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$dark-grey: hsl(0, 0%, 27%);
+$medium-screen: 912px;
+$large-screen: 1200px;
+
+body {
+	font-family: "League Spartan", sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+p {
+	color: $grey;
+	line-height: 1.5;
+}
+
+.swiper {
+	&-wrapper {
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+}
+
+.btn {
+	border: none;
+	background-color: transparent;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-weight: 500;
+}
+
+.arrows-box {
+	position: absolute;
+	z-index: 100;
+	top: -4rem;
+	right: 0;
+	display: flex;
+}
+
+.arrow-btn {
+	background-color: $black;
+	border: none;
+	width: 4rem;
+	height: 4rem;
+}
+
+@media screen and (min-width: $medium-screen) {
+	.arrows-box {
+		top: auto;
+		bottom: 0;
+		left: 0;
+	}
+
+	.btn {
+		cursor: pointer;
+		font-size: 1.05rem;
+
+		&:hover {
+			color: $grey;
+			fill: $grey;
+		}
+	}
+
+	.swiper {
+		width: 100%;
+		height: 70dvh;
+
+		&-wrapper {
+			img {
+				height: 70dvh;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $large-screen) {
+	.arrow-btn {
+		width: 6rem;
+		height: 6rem;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $dark-grey;
+		}
+	}
+}

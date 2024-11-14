@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+			rel="stylesheet" />
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<section class="menu">
+			<div class="menu-closed">
+				<div class="menu-icon" id="open-icon">
+					<img src="./images/icon-hamburger.svg" alt="Hamburguer Icon" />
+				</div>
+
+				<div class="logo">
+					<img src="./images/logo.svg" alt="Logo" class="logo" />
+				</div>
+			</div>
+
+			<div class="menu-opened">
+				<div class="menu-icon" id="close-icon">
+					<img src="./images/icon-close.svg" alt="Close Icon" />
+				</div>
+				<ul class="menu-list">
+					<li>home</li>
+					<li>shop</li>
+					<li>about</li>
+					<li>contact</li>
+				</ul>
+			</div>
+		</section>
+		<div class="overlay"></div>
+		<section class="hero">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<picture>
+							<source media="(min-width: 650px)" srcset="./images/desktop-image-hero-1.jpg" />
+							<img src="./images/mobile-image-hero-1.jpg" alt="Hero Image 1" />
+						</picture>
+					</div>
+					<div class="swiper-slide">
+						<picture>
+							<source media="(min-width: 650px)" srcset="./images/desktop-image-hero-2.jpg" />
+							<img src="./images/mobile-image-hero-2.jpg" alt="Hero Image 2" />
+						</picture>
+					</div>
+					<div class="swiper-slide">
+						<picture>
+							<source media="(min-width: 650px)" srcset="./images/desktop-image-hero-3.jpg" />
+							<img src="./images/mobile-image-hero-3.jpg" alt="Hero Image 3" />
+						</picture>
+					</div>
+				</div>
+			</div>
+
+			<div class="header">
+				<h1 class="header-title">Discover innovative ways to decorate</h1>
+
+				<p class="header-text">
+					We provide unmatched quality, comfort, and style for property owners across the country.
+					Our experts combine form and function in bringing your vision to life. Create a room in
+					your own style with our collection and make your property a reflection of you and what you
+					love.
+				</p>
+
+				<button class="btn">
+					Shop now
+					<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+							fill-rule="nonzero" />
+					</svg>
+				</button>
+
+				<div class="arrows-box">
+					<button class="arrow-btn arrow-btn-prev">
+						<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
+						</svg>
+					</button>
+					<button class="arrow-btn arrow-btn-next">
+						<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="info">
+			<img
+				src="./images/image-about-dark.jpg"
+				alt="About Iamge Dark"
+				class="about-img about-img-1" />
+
+			<div class="about">
+				<h2 class="about-title">About our furniture</h2>
+
+				<p class="about-text">
+					Our multifunctional collection blends design and function to suit your individual taste.
+					Make each room unique, or pick a cohesive theme that best express your interests and what
+					inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+					or anything in between. Product specialists are available to help you create your dream
+					space.
+				</p>
+			</div>
+
+			<img
+				src="./images/image-about-light.jpg"
+				alt="About Iamge Light"
+				class="about-img about-img-2" />
+		</section>
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./main.js"></script>
+	</body>
+</html>

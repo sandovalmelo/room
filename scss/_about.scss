@@ -1,0 +1,44 @@
+.about {
+	padding: 4rem 2rem;
+
+	&-title {
+		text-transform: uppercase;
+		letter-spacing: 6px;
+		font-size: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	&-img {
+		display: block;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: $medium-screen) {
+	.about {
+		padding: 2rem 1rem 0;
+
+		&-title {
+			margin-bottom: 1rem;
+		}
+
+		&-img {
+			height: 30dvh;
+			object-fit: cover;
+		}
+	}
+}
+
+@media screen and (min-width: $large-screen) {
+	.about {
+		padding: 4rem 3rem 0;
+
+		&-title {
+			font-size: 1.15rem;
+		}
+
+		&-text {
+			font-size: 1.15rem;
+		}
+	}
+}
